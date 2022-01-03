@@ -30,11 +30,10 @@ jobs2:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
     - name: Build the Docker image Push To quay.io
       uses: redhat-actions/push-to-registry@v2
       with:
-         image: tarnza23/php-webapp
+        image: tarnza23/php-webapp
         tags: latest ${{ github.sha }}
         registry: quay.io/tarnza23
         username: tarnza23
