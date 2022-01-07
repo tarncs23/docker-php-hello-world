@@ -13,8 +13,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Build the Docker image
-    - run: build build . -t tarnza23/php-webapp1
     - name: Build the Docker image to DockerHub
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
